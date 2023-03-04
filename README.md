@@ -1,3 +1,3 @@
-# Discord_clone.github.io
+# Discord clone
 
 https://lokeshsingh07.github.io/Discord_clone.github.io/
