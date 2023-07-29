@@ -85,7 +85,7 @@ button{
 /* _________________ hero section _________________ */
 .hero{
     width: 100%;
-    height: 550px;
+    height: 100%;
     background: #404EED;
     position: relative;
     z-index: -19;
@@ -94,7 +94,7 @@ button{
 .hero-content{
     width: 11/12;
     max-width: var(--content-width);
-    height: 550px;
+    height: 100%;
     margin: auto;
     position: relative;
 }
@@ -243,7 +243,7 @@ button{
 
 
 
-/* _________________ Feature section 1 _________________ */
+/* _________________ Feature section 2 _________________ */
 .feature-2{
     background-color: var(--bg-color);
 }
@@ -336,7 +336,7 @@ button{
 /* _________________ Footer _________________ */
 .footer{
     width: 100%;
-    height: 580px;
+    height: 100%;
     background-color: #23272A;
 }
 .footer-content{
@@ -450,4 +450,164 @@ button{
 }
 .footer-bottom .btn a{
     color: #fff;
+}
+
+
+
+
+
+
+
+
+/* ________ MOBILE VIEW  ________ */
+
+/* Navbar */
+@media only screen and (max-width: 1024px){
+    ul{
+        display: none;
+    }
+}
+
+
+
+/* Hero section */
+@media only screen and (max-width: 780px){
+    .hero-content{
+        padding: 3rem 0;
+    }
+    .hero-content-item{
+        width: 95%;
+        height: 100%;
+        min-height: 550px;
+        justify-content: start;
+    }
+    .hero-content-item h2{
+        font-size: 32px;
+    }
+    .hero-content-item p{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .btn-link{
+        flex-direction: column;
+        gap: 0.5rem;
+    }    
+    .hero-img-1{
+        display: none;
+    }
+    .hero-img-2{
+        width: 80%;
+        left: 0rem;
+        opacity: 90%;
+    }
+    .hero-img-3{
+        display: none;
+    }
+
+}
+
+
+
+/* Feature section 1 */
+@media only screen and (max-width: 1024px){
+    .feture-section{
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 10px;
+    }
+    .section1-img{
+        width: 100%;
+    }
+    .right-feature-section{
+        width: 95%;
+    }
+    .right-feature-section h2{
+        font-size: 35px;
+        margin-bottom: 1rem;
+    }
+    .right-feature-section p{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+}
+
+
+
+/* Feature section 2 */
+@media only screen and (max-width: 1024px){
+    .feature-section-2{
+        flex-direction: column;
+    }
+}
+
+
+
+/* Core Feature */
+@media only screen and (max-width: 1024px){
+    .core-feature{
+        height: 100%;
+        padding: 50px 0;
+    }
+    .core-feature-content{
+        width: 90%;
+    }
+    .core-feature-content h2{
+        font-size: 35px;
+        text-align: center;
+    }
+    .core-feature-content p{
+        width: 100%;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .core-feature-content img{
+        width: 100%;
+    }    
+    .core-feature-bt h3{
+        font-size: 28px;
+    }
+
+}
+
+
+
+/* footer */
+@media only screen and (max-width: 1024px){
+    .footer{
+        min-height: 500px;
+        padding: 10px 0 30px 0;
+    }
+    .footer-content{
+        width: 11/12;
+        max-width: var(--content-width);
+        height: 100%;
+        margin:  auto;
+        padding: 0rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-top{
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2rem;
+
+    }
+    .footer-left-part{
+        width: 100%;
+    }
+    .footer-right-part{
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 3rem;
+    }
+    .footer-right-part div{
+        width: 180px;
+    }
+
+        
 }
